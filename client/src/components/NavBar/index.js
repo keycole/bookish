@@ -3,15 +3,15 @@ import React from "react";
 function NavBar() {
     return (
         <navigation>
-        <ul class="nav">
-            <li class="nav-item">
-                <a class="nav-link" href="/">Home</a>
+        <ul className="nav bg-light fixed-top">
+            <li className="nav-item">
+                <a className="nav-link" href="/">Google Books</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/books">Books</a>
+            <li className="nav-item">
+                <a className="nav-link" href="/search">Search</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/search">Search</a>
+            <li className="nav-item">
+                <a className="nav-link" href="/books">Saved</a>
             </li>
         </ul>
         </navigation>

@@ -1,0 +1,31 @@
+.contentContainer {
+    margin-left: 20px;
+    padding-top: 10px;
+}
+
+.bookWrapper {
+    padding: 10px;
+}
+
+.wideColumn {
+    width: 75%;
+    margin-right: 10px;
+}
+
+#inlineButtonLeft {
+    margin-right: 5px;
+}
+
+#inlineButtonRight {
+    margin-left: 5px;
+}
+
+#bookImage {
+    width: 25%;
+    margin-top: 10px;
+}
+
+#bookDescription {
+    width: 75%;
+    margin-top: 10px;
+}

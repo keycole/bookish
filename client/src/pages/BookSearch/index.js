@@ -7,7 +7,6 @@ function BookSearch() {
         <div>
             <Header />
             <SearchForm />
-            This is the BookSearch page.
         </div>
     )
 }

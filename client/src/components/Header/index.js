@@ -1,12 +1,13 @@
 import React from "react";
+//import SearchForm from "../SearchForm";
+
+
 
 function Header() {
     return (
-        <div>
-            <div>
-                <h1>This is the Google Books Header!</h1>
-                <h2>Search and save books you love.</h2>
-            </div>
+        <div className="jumbotron">
+            <h1 className="display-4">Google Book Search</h1>
+            <p className="lead">Search for and save your favorite reads.</p>
         </div>
     )
 }

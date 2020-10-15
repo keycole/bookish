@@ -1,10 +1,11 @@
 import axios from "axios";
-//const baseURL = "https://www.googleapis.com/books/v1/volumes?q="
 
 export default {
   // Gets all books
-  getBooks: () => {
-    return axios.get("https://www.googleapis.com/books/v1/volumes?q=Frankenstein");
+  getBooks: (query) => {
+    let url = "https://www.googleapis.com/books/v1/volumes?q=" + query;
+    console.log("The url = ", url);
+    return axios.get(url);
   },
   // Gets the book with the given id
   getBook: function(id) {

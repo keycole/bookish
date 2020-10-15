@@ -25,10 +25,10 @@ function App() {
       <Router>
         <NavBar />
         <Switch>
-          <Route exact path={["/", "/books"]}>
+          <Route exact path={["/books"]}>
             <BooksLanding />
           </Route>
-          <Route exact path={"/search"}>
+          <Route exact path={"/", "/search"}>
             <BookSearch />
           </Route>
           <Route>

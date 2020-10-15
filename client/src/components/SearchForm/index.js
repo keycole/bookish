@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./styles.css";
 import API from "../../utils/API";
 
 function SearchForm() {
@@ -48,7 +49,7 @@ function SearchForm() {
                     </div>
                 </div>
             </form>
-            <div>
+            <div id="resultsDiv">
                 {bookResults.length ? (
                     <div>
                         {bookResults.map(book => {
@@ -59,15 +60,15 @@ function SearchForm() {
                                             <h2>{book.volumeInfo.title}</h2>
                                         </div>
                                         <div className="column">
-                                            <button id="inlineButtonLeft">View</button>
-                                            <button id="inlineButtonRight">Delete</button>
+                                            <button id="inlineButtonLeft"><a href={book.volumeInfo.infoLink} target="_blank">View</a></button>
+                                            <button id="inlineButtonRight">Save</button>
                                         </div>
                                     </div>
                                     <div className="row">
                                         {book.volumeInfo.subtitle}
                                     </div>
                                     <div className="row">
-                                    {/* {book.volumeInfo.authors[0]} */}
+                                    {/* {(book.volumeInfo.authors[0] !== "") ? (return book.volumeInfo.authors[0]) :(return "") } */}
                                     </div>
                                     <div className="row">
                                         <div className="column" id="bookImage">
